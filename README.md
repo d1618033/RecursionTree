@@ -8,7 +8,7 @@ Usage
 
 saves the recursion tree to a file
 
-      @recursion_tree
+      @recursion_tree(save_to_file=False)
 
 displays the recursion tree using xdot
 
