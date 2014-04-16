@@ -129,6 +129,9 @@ def recursion_tree_dec(func, save_to_file):
                 g2d.save(get_file_name(func, args, kwargs))
             else:
                 g2d.display()
+            info['caller'] = None
+            info['names'] = []
+            info['graph'] = Digraph()
         return result
     wrap.__name__ = func.__name__
     return wrap
